@@ -1,0 +1,20 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Generated arcade output (rebuild with main.py)
+site/
+
+# Private study materials — keep out of public GitHub
+LEARNING.md
+PLAN.md
+UPLOAD.md

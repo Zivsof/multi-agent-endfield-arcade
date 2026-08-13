@@ -1,0 +1,21 @@
+{
+  "name": "endfield-mastra-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "worker": "node --disable-warning=ExperimentalWarning --import tsx worker.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.71",
+    "@mastra/core": "^1.42.0",
+    "@mastra/mcp": "^1.10.0",
+    "dotenv": "^17.2.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

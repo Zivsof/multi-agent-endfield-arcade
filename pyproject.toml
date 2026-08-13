@@ -1,0 +1,27 @@
+[project]
+name = "multi-agent-endfield-arcade"
+version = "0.1.0"
+description = "Five agent frameworks build Endfield teaching mini-games; Google ADK orchestrates a shared board + hub."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "agent-framework-core>=1.8.1",
+    "agent-framework-openai>=1.8.1",
+    "agno[mcp]>=2.6.14",
+    "google-adk[mcp]>=2.2.0",
+    "openai>=2.34.0",
+    "pydantic-ai-slim[mcp,openai]>=1.107.0",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+    "strands-agents[openai]>=1.43.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
